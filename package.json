@@ -1,0 +1,23 @@
+{
+  "name": "rxjs-emission",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "rxjs": "^6.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gehemont/rxjs-emission.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gehemont/rxjs-emission/issues"
+  },
+  "homepage": "https://github.com/gehemont/rxjs-emission#readme"
+}
