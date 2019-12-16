@@ -29,5 +29,5 @@ subject3.next([
         data: [1, 2, 3]
     }
 ]);
-// tsc .\src\issues\issue3-combineLatest.ts --skipLibCheck
-// node .\src\issues\issue3-combineLatest.js
+// tsc .\src\issue\issue3-combineLatest.ts --skipLibChecktsc .\src\issue\issue3-combineLatest.ts --skipLibCheck
+// node .\src\issue\issue3-combineLatest.js

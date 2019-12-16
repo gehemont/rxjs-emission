@@ -1,11 +1,11 @@
-import { BehaviorSubject, combineLatest } from 'rxjs';
+import { combineLatest, ReplaySubject } from 'rxjs';
 import { filter, tap } from 'rxjs/operators';
 
 let counter = 0;
 
-const subject1: BehaviorSubject<number> = new BehaviorSubject<number>(0);
-const subject2: BehaviorSubject<string> = new BehaviorSubject<string>('');
-const subject3: BehaviorSubject<any[]> = new BehaviorSubject<any[]>(undefined);
+const subject1: ReplaySubject<number> = new ReplaySubject<number>(1);
+const subject2: ReplaySubject<string> = new ReplaySubject<string>(1);
+const subject3: ReplaySubject<any[]> = new ReplaySubject<any[]>(1);
 
 combineLatest([subject1, subject2, subject3])
     .pipe(
@@ -36,5 +36,5 @@ subject3.next([
     }
 ]);
 
-// tsc .\src\fix\fix3-combineLatest.ts --skipLibCheck
-// node .\src\fix\fix3-combineLatest.js
+// tsc .\src\fix\fix3-combineLatest-01.ts --skipLibCheck
+// node .\src\fix\fix3-combineLatest-01.js
